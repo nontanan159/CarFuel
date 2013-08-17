@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="HandheldFriendly" content="True">
+	    <meta name="MobileOptimized" content="320">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	    <meta http-equiv="cleartype" content="on">
+	    
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-title" content="APP TITLE">
+        
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="bootstrap-responsive.css">
+		<script src="jquery-2.0.3.js"></script>
+		<script src="jquery.mobile-menu.js"></script>
+		<script>
+			$(function(){
+				$("body").mobile_menu({
+					menu: ['#main-nav ul'],
+      				menu_width: 300,
+      				prepend_button_to: '#mobile-bar'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="slidemenu" class="slide-menu">
+			<div class="navbar navbar-inverse navbar-static-top">
+      		<div class="navbar-inner">
+			<div class="container">
+          	<div id="mobile-bar" class="brand">
+		</div>
+	</div>
+	</div>
+	</body>
+</html>
